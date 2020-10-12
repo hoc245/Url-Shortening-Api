@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url Shortening Api Master</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="nav">
+        <div id="nav-container">
+            <span class="logo" id="nav-logo"></span>
+            <ul id="nav-menu">
+                <li class="nav-menu-item title"><a href="">Features</a></li>
+                <li class="nav-menu-item title"><a href="">Pricing</a></li>
+                <li class="nav-menu-item title"><a href="">Resources</a></li>
+            </ul>
+            <button class="button" id="login">Login</button>
+            <button class="button" id="sign-up">Sign Up</button>
+            <input type="checkbox" id="nav-menu-toggle-btn">
+            <label class="nav-menu-toggle-btn" for="nav-menu-toggle-btn">
+                <span class="btn-icon top"></span>
+                <span class="btn-icon middle"></span>
+                <span class="btn-icon bottom"></span>
+            </label>
+            <div id="dropdown-menu-container">
+                <ul id="dropdown-menu">
+                    <li class="dropdown-menu-item title"><a href="">Features</a></li>
+                    <li class="dropdown-menu-item title"><a href="">Pricing</a></li>
+                    <li class="dropdown-menu-item title"><a href="">Resources</a></li>
+                </ul>
+                <div id="dropdown-menu-btn">
+                    <button class="button" id="dropdown-login">Login</button>
+                    <button class="button" id="dropdown-signup">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="intro">
+            <div id="intro-container">
+                <div id="intro-content">
+                    <p class="title" id="intro-title">More than just</br>shorter links</p>
+                    <p class="body-text" id="intro-text">Build your brand's recognition and get detailed insights on how your links are performing.</p>
+                    <button class="button" id="intro-btn">Get Started</button>
+                </div>
+                <div id="intro-image">
+                    <img src="./assets/img/illustration-working.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="submit-section">
+            <div id="submit-container">
+                <label for="url" class="url" data-error="none" >
+                    <input type="url" id="url" placeholder="Shorten a link here...">
+                    <span id="error-text">Please add a link</span>
+                </label>
+                <input type="submit" id="submit">
+                <label for="submit" class="button submit-btn">Shorten It!</label>
+            </div>
+            <div id="list-url">
+            </div>
+            <button class="button" id="clearlist-btn" style="margin:0 auto; display:none;">Clear List</button>
+        </section>
+        <section id="services">
+            <div id="services-header">
+                <p class="title" id="services-header-title">Advanced Statistics</p>
+                <p class="body-text" id="services-header-text">Track how your links are performing across the web with our advanced statistics dashboard.</p>
+            </div>
+            <div id="services-list">
+                <div class="services-item">
+                    <p class="title services-item-title">Brand recognition</p>
+                    <p class="body-text services-item-text">Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+                </div>
+                <div class="services-item">
+                    <p class="title services-item-title">Detailed Records</p>
+                    <p class="body-text services-item-text">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+                </div>
+                <div class="services-item">
+                    <p class="title services-item-title">Fully Customizable</p>
+                    <p class="body-text services-item-text">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+                </div>
+            </div>
+        </section>
+        <section id="banner">
+            <p class="title" id="banner-title">Boost your links today</p>
+            <button class="button" id="banner-btn">Get Started</button>
+        </section>
+    </main>
+    <footer>
+        <div id="footer-container">
+            <span class="logo" id="footer-logo"></span>
+            <div id="footer-menu-container">
+                <div class="footer-menu">
+                    <p class="title footer-menu-title">Features</p>
+                    <ul class="footer-menu-list">
+                        <li class="list-item"><a href="">Link Shortening</a></li>
+                        <li class="list-item"><a href="">Branded Links</a></li>
+                        <li class="list-item"><a href="">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <p class="title footer-menu-title">Resources</p>
+                    <ul class="footer-menu-list">
+                        <li class="list-item"><a href="">Blog</a></li>
+                        <li class="list-item"><a href="">Developers</a></li>
+                        <li class="list-item"><a href="">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <p class="title footer-menu-title">Company</p>
+                    <ul class="footer-menu-list">
+                        <li class="list-item"><a href="">About</a></li>
+                        <li class="list-item"><a href="">Our Team</a></li>
+                        <li class="list-item"><a href="">Careers</a></li>
+                        <li class="list-item"><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="footer-social">
+                <span class="social-icon f"></span>
+                <span class="social-icon tw"></span>
+                <span class="social-icon p"></span>
+                <span class="social-icon in"></span>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
