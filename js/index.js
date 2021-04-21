@@ -114,10 +114,10 @@ function sendUrl(url) {
     var myObj = {
         'url' : url,
     }
-    $.post('https://rel.ink/api/links/',myObj,function(data){
-        idLink = data.hashid;
+    $.post('https://api.shrtco.de/v2/shorten',myObj,function(data){
+        idLink = data.result.full_short_link;
     }).done(function(){
-        var shortenUrl = "https://rel.ink/" + idLink;
+        var shortenUrl = idLink;
             urlInputLabel.attr('data-error','none');
             createElement(url,shortenUrl);
             currentUrl.push(url,shortenUrl);
